@@ -7,7 +7,9 @@
   "license": "ISC",
   "scripts": {
     "dev": "gulp",
-    "dist": "gulp clean"
+    "dist": "gulp clean",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "angular": "^1.6.2",
@@ -62,6 +64,8 @@
     "npm": "^4.5.0",
     "run-sequence": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
-  }
+    "vinyl-source-stream": "^1.1.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
